@@ -317,6 +317,10 @@ header {
     text-decoration: none;
 }
 
+.project p{
+    text-align: justify;
+}
+
 .project__link img {
     height: 240px;
     width: auto;
