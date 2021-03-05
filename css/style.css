@@ -177,7 +177,7 @@ header {
 }
 
 .nav__link:hover {
-    color: var(--clr-colored);
+    color: var(--clr-accent);
 }
 
 .nav-toggle {
@@ -277,7 +277,7 @@ header {
         grid-row: 2;
         text-align: center;
         position: relative;
-                width: calc(100% + 1.5em);
+        width: calc(100% + 1.5em);
     }
 }
 
@@ -285,10 +285,9 @@ header {
 /* my projects section */
 
 .my-projects {
-        background:   linear-gradient(#5c61a8,#5c61a8) center/100% calc(100% - 100px) no-repeat,
-     url(../img/iot.png);
-    background-size: cover;    
-        background-blend-mode: multiply;  
+    background: linear-gradient(#5c61a8, #5c61a8) center/100% calc(100% - 100px) no-repeat, url(../img/iot.png);
+    background-size: cover;
+    background-blend-mode: multiply;
     text-align: center;
 }
 
@@ -317,14 +316,14 @@ header {
     text-decoration: none;
 }
 
-.project p{
+.project p {
     text-align: justify;
 }
 
 .project__link img {
     height: 240px;
     width: auto;
-    margin: 0 auto;     
+    margin: 0 auto;
 }
 
 .project__link:hover {
@@ -339,10 +338,25 @@ header {
     .projects {
         display: flex;
         max-width: 1000px;
-        margin: 0 auto;
+        margin: auto;
     }
     .project+.project {
         margin-left: 2em;
+    }
+    .project {
+        display: grid;
+        grid-template-rows: 3rem 8rem auto;
+        grid-template-areas: "title" "text" "img";
+
+    }
+    .project__title {
+        grid-area: title;
+    }
+    .project__text {
+        grid-area: text;
+    }
+    project__image {
+        grid-area: img;
     }
 }
 
