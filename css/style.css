@@ -345,7 +345,7 @@ header {
     }
     .project {
         display: grid;
-        grid-template-rows: 3rem 8rem auto;
+        grid-template-rows: 3rem 12rem auto;
         grid-template-areas: "title" "text" "img";
 
     }
